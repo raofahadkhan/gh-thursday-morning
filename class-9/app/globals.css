@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .header {
+  font-weight: 700;
+  font-size: 100px;
+} */
+
+/* 100 vh or h-screen = takes the full height of screen */
+
+/* 50 % = 50% of parent height not screen */
+
+.main {
+    display: flex;
+    gap: 5px;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+@media (max-width: 320px) {
+    /* .header {
+        color: blue
+    } */
+     #box2 {
+        background-color: red;
+        border:3px solid green;
+     }
+
+     #box1 {
+        /* display:none ; */
+        visibility: hidden;
+     }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+  /* 1px to 768px
+    */
+  /* .header {
+    font-size: 50px;
+  } */
+}
+
